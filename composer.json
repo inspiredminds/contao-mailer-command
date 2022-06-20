@@ -23,7 +23,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "contao/core-bundle": "^4.13",
+        "contao/core-bundle": "^4.13 || ^5.0",
         "inspiredminds/symfony-mailer-command-bundle": "^1.0"
     },
     "autoload": {
