@@ -1,0 +1,45 @@
+{
+    "name": "inspiredminds/contao-mailer-command",
+    "description": "Contao extension add a mailer:send command.",
+    "type": "contao-bundle",
+    "license": "LGPL-3.0-or-later",
+    "homepage": "https://github.com/inspiredminds/contao-mailer-command",
+    "authors": [
+        {
+            "name": "Fritz Michael Gschwantner",
+            "email": "fmg@inspiredminds.at",
+            "role": "Developer"
+        }
+    ],
+	"support": {
+		"issues": "https://github.com/inspiredminds/contao-mailer-command/issues",
+		"source": "https://github.com/inspiredminds/contao-mailer-command"
+	},
+	"funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/fritzmg"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "contao/core-bundle": "^4.13",
+        "inspiredminds/symfony-mailer-command-bundle": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "InspiredMinds\\ContaoMailerCommand\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "InspiredMinds\\ContaoMailerCommand\\ContaoManager\\Plugin"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16 || ^3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": true
+        }
+    }
+}
